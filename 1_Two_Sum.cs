@@ -51,20 +51,17 @@ namespace LeetCode
 
         public int[] TwoSumBetter(int[] nums, int target)
         {
-            var hashtable = new Dictionary<int, int>();
+            Dictionary<int, int> hashtable = new Dictionary<int, int>();
 
-            for (var i = 0; i < nums.Length; i++)
-            {
-                var valueToFind = target - nums[i];
+            for (int i = 0; i < nums.Length; i++){
+                int valueToFind = target - nums[i];
 
-                if (hashtable.ContainsKey(valueToFind))
-                {
+                if (hashtable.ContainsKey(valueToFind)){
                     int[] answer = { hashtable[valueToFind], i + 1 };
                     return answer;
                 }
 
-                if (!hashtable.ContainsKey(nums[i]))
-                {
+                if (!hashtable.ContainsKey(nums[i])){
                     hashtable.Add(nums[i], i + 1);
                 }
             }
