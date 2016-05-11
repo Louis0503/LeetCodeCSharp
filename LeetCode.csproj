@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="19_Remove_Nth_Node_From_End_of_List.cs" />
+    <Compile Include="1_Two_Sum.cs" />
+    <Compile Include="231_Power_of_Two.cs" />
+    <Compile Include="258_Add_Digits.cs" />
+    <Compile Include="326_Power_of_Three .cs" />
     <Compile Include="347_Top_K_Frequent_Elements.cs" />
     <Compile Include="DataStruct\MinHeap.cs" />
     <Compile Include="Program.cs" />
