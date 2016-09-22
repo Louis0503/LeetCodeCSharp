@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode
 {
@@ -12,12 +8,13 @@ namespace LeetCode
         {
             var length1 = nums1.Length;
             var length2 = nums2.Length;
-            var total = length1 + length2;
-            int index = total / 2;
-            bool isFind2 = false;
+            var totalLength = length1 + length2;
+
+            int index = totalLength / 2;
+            var isFind2 = false;
             var result = 0.0;
 
-            if(total % 2 == 0) {
+            if(totalLength % 2 == 0) {
                 isFind2 = true;
             } else {
                 index++;
@@ -55,7 +52,7 @@ namespace LeetCode
                 if(count == index) {
                     result = tmp;
                 }
-                if(count == total)
+                if(count == totalLength)
                     break;
             }
 

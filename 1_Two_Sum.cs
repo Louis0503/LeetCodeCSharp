@@ -1,48 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace LeetCode
 {
+    //Given an array of integers, return indices of the two numbers 
+    //such that they add up to a specific target. You may assume 
+    //that each input would have exactly one solution.
+
     public class _1_Two_Sum
     {
         public class Item
         {
-            public int index;
-            public int index2 = -1;
-            public Item(int index)
+            public int value;
+            public int index = -1;
+            public Item(int value)
             {
-                this.index = index;
+                this.value = value;
             }
         }
-        private Dictionary<int, Item> _integerDictionary = new Dictionary<int, Item>();
+
+        private Dictionary<int, Item> _hash = new Dictionary<int, Item>();
+        private Dictionary<int, int> _hash2 = new Dictionary<int, int>();
         public int[] TwoSum(int[] nums, int target)
         {
             for (int i = 0; i < nums.Length; i++){
-                if (_integerDictionary.ContainsKey(nums[i])){
-                    if (_integerDictionary[nums[i]].index2 == -1){
-                        _integerDictionary[nums[i]].index2 = i;
+
+                if (_hash.ContainsKey(nums[i])){
+
+                    if (_hash[nums[i]].index == -1){
+
+                        _hash[nums[i]].index = i;
                     }
                 }else {
-                    _integerDictionary.Add(nums[i], new Item(i));
+                    _hash.Add(nums[i], new Item(i));
                 }
             }
             
             int[] output = new int[2];
+
             for (int i = 0; i < nums.Length; i++){
                 if (nums[i] << 1 == target){
-                    if (_integerDictionary[nums[i]].index2 == -1) {
+                    if (_hash[nums[i]].index == -1) {
                         continue;
                     }
-                    output[0] = _integerDictionary[nums[i]].index;
-                    output[1] = _integerDictionary[nums[i]].index2;
+                    output[0] = _hash[nums[i]].value;
+                    output[1] = _hash[nums[i]].index;
                     break;
                 }
-                else if (_integerDictionary.ContainsKey(target - nums[i])){
+                else if (_hash.ContainsKey(target - nums[i])){
                     output[0] = i;
-                    output[1] = _integerDictionary[target - nums[i]].index;
+                    output[1] = _hash[target - nums[i]].value;
                     break;
                 }
             }
@@ -51,19 +57,17 @@ namespace LeetCode
 
         public int[] TwoSumBetter(int[] nums, int target)
         {
-            Dictionary<int, int> hashtable = new Dictionary<int, int>();
-
+            _hash2.Clear();
+            
             for (int i = 0; i < nums.Length; i++){
-                int valueToFind = target - nums[i];
 
-                if (hashtable.ContainsKey(valueToFind)){
-                    int[] answer = { hashtable[valueToFind], i + 1 };
+                int remainer = target - nums[i];
+
+                if (_hash2.ContainsKey(remainer)){
+                    int[] answer = { _hash2[remainer], i};
                     return answer;
                 }
-
-                if (!hashtable.ContainsKey(nums[i])){
-                    hashtable.Add(nums[i], i + 1);
-                }
+                _hash2[nums[i]] = i;
             }
 
             return null;

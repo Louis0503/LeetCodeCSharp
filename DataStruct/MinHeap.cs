@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode.DataStruct
 {
@@ -20,10 +17,12 @@ namespace LeetCode.DataStruct
         }
         public void Delete(T item)
         {
-            int index = elements.IndexOf(item);
-            int last = elements.Count - 1;
+            var index = elements.IndexOf(item);
+            var last = elements.Count - 1;
+
             elements[index] = elements[last];
             elements.RemoveAt(last);
+
             Heapify();
         }
 
@@ -41,8 +40,8 @@ namespace LeetCode.DataStruct
         #region Help Methods
         private void Heapify()
         {
-            for (int i = elements.Count - 1; i > 0; i--){
-                int parentPosition = (i + 1) / 2 - 1;
+            for (var i = elements.Count - 1; i > 0; i--){
+                var parentPosition = (i + 1) / 2 - 1;
                 parentPosition = parentPosition >= 0 ? parentPosition : 0;
 
                 if (elements[parentPosition].CompareTo(elements[i]) > 1){
