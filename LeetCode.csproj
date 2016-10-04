@@ -51,6 +51,7 @@
     <Compile Include="347_Top_K_Frequent_Elements.cs" />
     <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="4_MedianOfTwoSortedArrays.cs" />
+    <Compile Include="Codility\Binary_gap.cs" />
     <Compile Include="DataStruct\MinHeap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

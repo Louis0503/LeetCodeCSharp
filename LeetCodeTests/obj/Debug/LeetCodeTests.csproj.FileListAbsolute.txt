@@ -18,3 +18,13 @@ D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\zh-Hant\Microsoft.VisualStudi
 D:\Practice\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.csprojResolveAssemblyReference.cache
 D:\Practice\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.dll
 D:\Practice\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.pdb
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCodeTests.dll
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCodeTests.pdb
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCode.exe
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCode.pdb
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\LeetCodeCSharp\LeetCodeTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.csprojResolveAssemblyReference.cache
+E:\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.dll
+E:\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.pdb
