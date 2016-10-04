@@ -6,3 +6,9 @@ F:\leetcode\bin\Debug\LeetCode.pdb
 F:\leetcode\obj\Debug\LeetCode.csprojResolveAssemblyReference.cache
 F:\leetcode\obj\Debug\LeetCode.exe
 F:\leetcode\obj\Debug\LeetCode.pdb
+D:\Practice\LeetCodeCSharp\bin\Debug\LeetCode.exe.config
+D:\Practice\LeetCodeCSharp\obj\Debug\LeetCode.exe
+D:\Practice\LeetCodeCSharp\obj\Debug\LeetCode.pdb
+D:\Practice\LeetCodeCSharp\bin\Debug\LeetCode.exe
+D:\Practice\LeetCodeCSharp\bin\Debug\LeetCode.pdb
+D:\Practice\LeetCodeCSharp\obj\Debug\LeetCode.csprojResolveAssemblyReference.cache

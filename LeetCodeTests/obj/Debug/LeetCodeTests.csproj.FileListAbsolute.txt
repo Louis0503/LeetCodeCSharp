@@ -8,3 +8,13 @@ F:\leetcode\LeetCodeTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.QualityTools.
 F:\leetcode\LeetCodeTests\obj\Debug\LeetCodeTests.csprojResolveAssemblyReference.cache
 F:\leetcode\LeetCodeTests\obj\Debug\LeetCodeTests.dll
 F:\leetcode\LeetCodeTests\obj\Debug\LeetCodeTests.pdb
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCodeTests.dll
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCodeTests.pdb
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCode.exe
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\LeetCode.pdb
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Practice\LeetCodeCSharp\LeetCodeTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Practice\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.csprojResolveAssemblyReference.cache
+D:\Practice\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.dll
+D:\Practice\LeetCodeCSharp\LeetCodeTests\obj\Debug\LeetCodeTests.pdb

@@ -49,6 +49,7 @@
     <Compile Include="258_Add_Digits.cs" />
     <Compile Include="326_Power_of_Three .cs" />
     <Compile Include="347_Top_K_Frequent_Elements.cs" />
+    <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="4_MedianOfTwoSortedArrays.cs" />
     <Compile Include="DataStruct\MinHeap.cs" />
     <Compile Include="Program.cs" />
