@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode
 {
@@ -34,10 +30,13 @@ namespace LeetCode
             var maxGap = 0;
             var tmpGap = 0;
             var startRecord = false;
+
             for(var i = 30 ; i >=0 ; i--) {
+
                 if(_records[i] == 0) {
                     tmpGap++;
                 } else {
+
                     if(startRecord) {
                         maxGap = Math.Max(maxGap, tmpGap);
                     } else {

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8AC04E52-EED3-4CA8-A068-94C201B0A90A}</ProjectGuid>
+    <ProjectGuid>{E87270E5-080D-4567-A50A-1AA7999D58BE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LeetCodeTests</RootNamespace>
-    <AssemblyName>LeetCodeTests</AssemblyName>
+    <RootNamespace>LeetCodeTests.Tests</RootNamespace>
+    <AssemblyName>LeetCodeTests.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -16,7 +16,6 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,19 +50,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Binary_gapTests.cs" />
-    <Compile Include="LeetCode\DynamicProgramming\_121_Best_Time_to_Buy_and_Sell_StockTests.cs" />
-    <Compile Include="LeetCode\DynamicProgramming\_122_Best_Time_to_Buy_and_Sell_Stock_IITests.cs" />
-    <Compile Include="LeetCode\MedianOfTwoSortedArraysTests.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LeetCode\_1_Two_SumTests.cs" />
-    <Compile Include="LeetCode\_3_LongestSubstringWithoutRepeatingCharactersTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LeetCode.csproj">
-      <Project>{AD061112-C3D2-428B-9C3C-7029520DBE9F}</Project>
-      <Name>LeetCode</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

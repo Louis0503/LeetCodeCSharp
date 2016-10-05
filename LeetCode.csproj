@@ -43,22 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="19_Remove_Nth_Node_From_End_of_List.cs" />
-    <Compile Include="1_Two_Sum.cs" />
-    <Compile Include="231_Power_of_Two.cs" />
-    <Compile Include="258_Add_Digits.cs" />
-    <Compile Include="326_Power_of_Three .cs" />
-    <Compile Include="347_Top_K_Frequent_Elements.cs" />
-    <Compile Include="3_LongestSubstringWithoutRepeatingCharacters.cs" />
-    <Compile Include="4_MedianOfTwoSortedArrays.cs" />
+    <Compile Include="LeetCode\19_Remove_Nth_Node_From_End_of_List.cs" />
+    <Compile Include="LeetCode\1_Two_Sum.cs" />
+    <Compile Include="LeetCode\231_Power_of_Two.cs" />
+    <Compile Include="LeetCode\258_Add_Digits.cs" />
+    <Compile Include="LeetCode\326_Power_of_Three .cs" />
+    <Compile Include="LeetCode\347_Top_K_Frequent_Elements.cs" />
+    <Compile Include="LeetCode\3_LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="LeetCode\4_MedianOfTwoSortedArrays.cs" />
     <Compile Include="Codility\Binary_gap.cs" />
     <Compile Include="DataStruct\MinHeap.cs" />
+    <Compile Include="LeetCode\DynamicProgramming\121_Best_Time_to-Buy_and_Sell_Stock.cs" />
+    <Compile Include="LeetCode\DynamicProgramming\122_Best_Time_to_Buy_and_Sell_Stock_II.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
