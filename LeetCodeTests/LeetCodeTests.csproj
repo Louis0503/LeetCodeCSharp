@@ -52,6 +52,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Binary_gapTests.cs" />
+    <Compile Include="Codility\Class1Tests.cs" />
+    <Compile Include="Codility\Class2Tests.cs" />
+    <Compile Include="Codility\Class3Tests.cs" />
+    <Compile Include="Codility\DemoTests.cs" />
+    <Compile Include="Codility\RotationTests.cs" />
     <Compile Include="LeetCode\DynamicProgramming\_121_Best_Time_to_Buy_and_Sell_StockTests.cs" />
     <Compile Include="LeetCode\DynamicProgramming\_122_Best_Time_to_Buy_and_Sell_Stock_IITests.cs" />
     <Compile Include="LeetCode\MedianOfTwoSortedArraysTests.cs" />
