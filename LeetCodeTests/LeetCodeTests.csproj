@@ -59,10 +59,6 @@
     <Compile Include="Codility\RotationTests.cs" />
     <Compile Include="LeetCode\DynamicProgramming\_121_Best_Time_to_Buy_and_Sell_StockTests.cs" />
     <Compile Include="LeetCode\DynamicProgramming\_122_Best_Time_to_Buy_and_Sell_Stock_IITests.cs" />
-    <Compile Include="LeetCode\LinkedList\RemoveDuplicatesfromSortedList.cs" />
-    <Compile Include="LeetCode\LinkedList\RemoveDuplicatesfromSortedListII.cs" />
-    <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
-    <Compile Include="LeetCode\LinkedList\ReverseLinkedListII.cs" />
     <Compile Include="LeetCode\MedianOfTwoSortedArraysTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LeetCode\_1_Two_SumTests.cs" />
@@ -74,9 +70,7 @@
       <Name>LeetCode</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LeetCode\ArrayAndNumber\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -48,18 +48,22 @@
     <Compile Include="Codility\Class2.cs" />
     <Compile Include="Codility\Class1.cs" />
     <Compile Include="Codility\Rotation .cs" />
-    <Compile Include="LeetCode\19_Remove_Nth_Node_From_End_of_List.cs" />
-    <Compile Include="LeetCode\1_Two_Sum.cs" />
+    <Compile Include="LeetCode\LinkedList\19_Remove_Nth_Node_From_End_of_List.cs" />
+    <Compile Include="LeetCode\ArrayAndNumber\1_Two_Sum.cs" />
     <Compile Include="LeetCode\231_Power_of_Two.cs" />
     <Compile Include="LeetCode\258_Add_Digits.cs" />
     <Compile Include="LeetCode\326_Power_of_Three .cs" />
     <Compile Include="LeetCode\347_Top_K_Frequent_Elements.cs" />
     <Compile Include="LeetCode\3_LongestSubstringWithoutRepeatingCharacters.cs" />
-    <Compile Include="LeetCode\4_MedianOfTwoSortedArrays.cs" />
+    <Compile Include="LeetCode\ArrayAndNumber\4_MedianOfTwoSortedArrays.cs" />
     <Compile Include="Codility\Binary_gap.cs" />
     <Compile Include="DataStruct\MinHeap.cs" />
     <Compile Include="LeetCode\DynamicProgramming\121_Best_Time_to-Buy_and_Sell_Stock.cs" />
     <Compile Include="LeetCode\DynamicProgramming\122_Best_Time_to_Buy_and_Sell_Stock_II.cs" />
+    <Compile Include="LeetCode\LinkedList\RemoveDuplicatesfromSortedList.cs" />
+    <Compile Include="LeetCode\LinkedList\RemoveDuplicatesfromSortedListII.cs" />
+    <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
+    <Compile Include="LeetCode\LinkedList\ReverseLinkedListII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
