@@ -48,6 +48,7 @@
     <Compile Include="Codility\Class2.cs" />
     <Compile Include="Codility\Class1.cs" />
     <Compile Include="Codility\Rotation .cs" />
+    <Compile Include="LeetCode\Graph\Clone_Graph.cs" />
     <Compile Include="LeetCode\LinkedList\19_Remove_Nth_Node_From_End_of_List.cs" />
     <Compile Include="LeetCode\ArrayAndNumber\1_Two_Sum.cs" />
     <Compile Include="LeetCode\231_Power_of_Two.cs" />
