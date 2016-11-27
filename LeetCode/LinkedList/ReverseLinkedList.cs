@@ -21,12 +21,19 @@ namespace LeetCodeTests.LeetCode.LinkedList
             var currentNode = head.next;
             head.next = null;
             while(currentNode != null) {
-                var tmpNode = currentNode.next;
-                currentNode.next = previousNode;
-                previousNode = currentNode;
-                currentNode = tmpNode;
+                ReverseNode(ref previousNode,ref  currentNode);
             }
             return previousNode;
+        }
+        // A(previousNode)->B(currentNode)->C->D->E
+        // ==> B(previousNode)->A C(currentNode)->D->E
+        // ==> C(previousNode)->B->A D(currentNode)->E
+        private void ReverseNode(ref ListNode previousNode, ref ListNode currentNode)
+        {
+            var tmpNode = currentNode.next; // C
+            currentNode.next = previousNode; // B->A
+            previousNode = currentNode; //B
+            currentNode = tmpNode;//C
         }
     }
 }

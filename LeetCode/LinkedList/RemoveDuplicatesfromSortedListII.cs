@@ -1,6 +1,11 @@
 ﻿
 namespace LeetCodeTests.LeetCode.LinkedList
 {
+    /*
+     *  For example,
+     *  Given 1->2->3->3->4->4->5, return 1->2->5.
+     *  Given 1->1->1->2->3, return 2->3.
+     */
     public class RemoveDuplicatesfromSortedListII
     {
         public class ListNode
@@ -17,6 +22,7 @@ namespace LeetCodeTests.LeetCode.LinkedList
             var dummyHead = new ListNode(0);
             dummyHead.next = head;
             head = dummyHead;
+
             while(head.next != null && head.next.next != null) {
                 if(head.next.val == head.next.next.val) {
                     // find the node don't need to remove or find null

@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 namespace LeetCodeTests.LeetCode.LinkedList
 {
     /*
@@ -10,44 +10,57 @@ namespace LeetCodeTests.LeetCode.LinkedList
     */
     public class ReverseLinkedListII
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x)
-            {
-                val = x;
-            }
-        }
-
+        // [3,5], 1,2
         public ListNode ReverseBetween(ListNode head, int m, int n)
         {
             if(m >= n || head == null) {
                 return head;
             }
+            var dummyHead = new ListNode(0);
+            dummyHead.next = head;
 
-            //Find the m-1 Node
-            
+            //Find the m-1th Node
+            var startNode = FindNthNode(dummyHead, m - 1);
+
             //reverse the mth to nth Node
-                return null;
+            ReverseNNodes(startNode, n-m);
+            return dummyHead.next;
         }
 
-        private bool ReverseNNodeAfterThisNode(ListNode thisNode, int size)
+        public ListNode FindNthNode(ListNode head, int index)
         {
-            if(thisNode == null || size < 1) {
-                return true;
+            var current = head;
+            while(index > 0 && current.next != null) {
+                index--;
+                current = current.next;
             }
-            var previousNode = thisNode;
+            return current;
+        }
+
+        public void ReverseNNodes(ListNode startNode, int size)
+        {
+            if(startNode == null || size < 1) {
+                return ;
+            }
+            var previousNode = startNode;
+            var currentNode = previousNode.next;
             var count = size;
-            while(count > 1) {
-                var currentNode = previousNode.next;
-                var tmpNode = currentNode.next;
-                currentNode.next = previousNode;
-                previousNode = currentNode;
-                currentNode = tmpNode;
+            while(count > 0) {
+                ReverseNode(previousNode, currentNode);
                 count--;
             }
-            return true;
+        }
+        // A(previousNode)->B(currentNode)->C->D->E
+        // ==> B(previousNode)->A C(currentNode)->D->E
+        // ==> C(previousNode)->B->A D(currentNode)->E
+        public void ReverseNode(ListNode previousNode, ListNode currentNode)
+        {
+            if(currentNode != null) {
+                var tmpNode = currentNode.next; // C
+                currentNode.next = previousNode; // B->A
+                previousNode = currentNode; //B
+                currentNode = tmpNode;//C
+            }
         }
     }
 }
