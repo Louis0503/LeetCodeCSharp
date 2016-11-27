@@ -16,14 +16,16 @@ namespace LeetCodeTests.LeetCode.LinkedList
             if(m >= n || head == null) {
                 return head;
             }
+            // create dummy head
             var dummyHead = new ListNode(0);
             dummyHead.next = head;
 
-            //Find the m-1th Node
+            // find the m-1th Node
             var startNode = FindNthNode(dummyHead, m - 1);
 
-            //reverse the mth to nth Node
-            ReverseNNodes(startNode, n-m);
+            // reverse the mth to nth Node
+            ReverseNNodesAfterStartNode(startNode, n-m);
+
             return dummyHead.next;
         }
 
@@ -37,30 +39,26 @@ namespace LeetCodeTests.LeetCode.LinkedList
             return current;
         }
 
-        public void ReverseNNodes(ListNode startNode, int size)
+        private void ReverseNNodesAfterStartNode(ListNode startNode, int size)
         {
             if(startNode == null || size < 1) {
                 return ;
             }
-            var previousNode = startNode;
+            
+            var previousNode = startNode.next;
+            var head = startNode.next;
             var currentNode = previousNode.next;
             var count = size;
-            while(count > 0) {
-                ReverseNode(previousNode, currentNode);
+
+            while((count > 0) && (currentNode != null)) {
+                var tmpNode = currentNode.next;
+                currentNode.next = previousNode;
+                previousNode = currentNode;
+                currentNode = tmpNode;
                 count--;
             }
-        }
-        // A(previousNode)->B(currentNode)->C->D->E
-        // ==> B(previousNode)->A C(currentNode)->D->E
-        // ==> C(previousNode)->B->A D(currentNode)->E
-        public void ReverseNode(ListNode previousNode, ListNode currentNode)
-        {
-            if(currentNode != null) {
-                var tmpNode = currentNode.next; // C
-                currentNode.next = previousNode; // B->A
-                previousNode = currentNode; //B
-                currentNode = tmpNode;//C
-            }
+            startNode.next = previousNode;
+            head.next = currentNode;
         }
     }
 }

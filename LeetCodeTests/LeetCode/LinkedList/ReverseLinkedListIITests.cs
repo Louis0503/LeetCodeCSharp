@@ -28,76 +28,29 @@ namespace LeetCodeTests.LeetCode.LinkedList.Tests
             node5.next = node6;
             var target = new ReverseLinkedListII();
             // act
-            target.ReverseBetween(node1, 2, 4);
+            
+            var head = target.ReverseBetween(node1, 2, 5);
+            var actual1 = target.FindNthNode(head, 1);
+            var actual2 = target.FindNthNode(head, 2);
+            var actual3 = target.FindNthNode(head, 3);
+            var actual4 = target.FindNthNode(head, 4);
+            ShowAllNodes(head);
             // assert
-            var node = node1;
-            while(node != null) {
-                Console.WriteLine($"{node.val}");
-                node = node.next;
-            }
-            Assert.AreEqual(1, node1.val);
-        }
-
-        [TestMethod()]
-        public void FindNthNodeTest()
-        {
-            // arrange
-            var node1 = new ListNode(1);
-            var node2 = new ListNode(2);
-            var node3 = new ListNode(3);
-            var node4 = new ListNode(4);
-            var node5 = new ListNode(5);
-            var node6 = new ListNode(6);
-            node1.next = node2;
-            node2.next = node3;
-            node3.next = node4;
-            node4.next = node5;
-            node5.next = node6;
-            var dummyHead = new ListNode(0);
-            dummyHead.next = node1;
-            var target = new ReverseLinkedListII();
-            var expect = 5;
-            // act
-            var actual = target.FindNthNode(dummyHead, 5);
-            // assert
-            Assert.AreEqual(expect, actual.val);
-        }
-
-        [TestMethod()]
-        public void ReverseNNodesTest()
-        {
-            // arrange
-            var node1 = new ListNode(1);
-            var node2 = new ListNode(2);
-            var node3 = new ListNode(3);
-            var node4 = new ListNode(4);
-            var node5 = new ListNode(5);
-            var node6 = new ListNode(6);
-            node1.next = node2;
-            node2.next = node3;
-            node3.next = node4;
-            node4.next = node5;
-            node5.next = node6;
-            var dummyHead = new ListNode(0);
-            dummyHead.next = node1;
-            var target = new ReverseLinkedListII();
-            // act
-            ShowAllNodes(dummyHead);
-            target.ReverseNNodes(dummyHead,2);
-            Console.WriteLine($"11111111");
-            //ShowAllNodes(dummyHead);
-            Console.WriteLine($"2222222");
-            var actual = target.FindNthNode(dummyHead, 1);
-            //assert
-            Assert.AreEqual(1, actual.val);
+            Assert.AreEqual(1, head.val);
+            Assert.AreEqual(5, actual1.val);
+            Assert.AreEqual(4, actual2.val);
+            Assert.AreEqual(3, actual3.val);
+            Assert.AreEqual(2, actual4.val);
         }
 
         private void ShowAllNodes(ListNode head)
         {
-            var node = head;
-            while(node != null) {
-                Console.WriteLine($"{node.val}");
-                node = node.next;
+            var tmpNode = head;
+            var size = 0;
+            while(tmpNode != null && size < 100) {
+                Console.WriteLine($"{tmpNode.val}");
+                tmpNode = tmpNode.next;
+                size++;
             }
         }
     }
