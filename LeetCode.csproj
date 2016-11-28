@@ -61,6 +61,7 @@
     <Compile Include="DataStruct\MinHeap.cs" />
     <Compile Include="LeetCode\DynamicProgramming\121_Best_Time_to-Buy_and_Sell_Stock.cs" />
     <Compile Include="LeetCode\DynamicProgramming\122_Best_Time_to_Buy_and_Sell_Stock_II.cs" />
+    <Compile Include="LeetCode\LinkedList\PartitionList.cs" />
     <Compile Include="LeetCode\LinkedList\RemoveDuplicatesfromSortedList.cs" />
     <Compile Include="LeetCode\LinkedList\RemoveDuplicatesfromSortedListII.cs" />
     <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
